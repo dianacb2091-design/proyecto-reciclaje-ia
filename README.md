@@ -8,9 +8,9 @@ La mala clasificación de residuos domésticos contamina los lotes de reciclaje.
 
 ## Modelo
 - MobileNetV2 pre-entrenada en ImageNet (capas congeladas, Feature Extraction).
-- Encabezado propio: `GlobalAveragePooling2D` + `Dropout(0.3)` + `Dense(3, softmax)`.
+- Encabezado propio: `GlobalAveragePooling2D` + `Dropout(0.2)` + `Dense(3, softmax)`.
 - Aumento de datos geométrico (volteo, rotación, zoom).
-- Optimizador Adam (lr=0.001), pérdida `sparse_categorical_crossentropy`, 25 épocas.
+- Optimizador Adam (lr=0.001), pérdida `sparse_categorical_crossentropy`, 15 épocas.
 - Accuracy de validación: 77.8% – 100% (mínimo exigido: 75%). Matriz de confusión final: 9/9 correctas.
 
 ## Dataset
